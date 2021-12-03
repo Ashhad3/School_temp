@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts
+    script(src='../static/scripts.js')
+block style  
+        style
+            include ../static/style.css
+block content
+         
+        section.main 
+            div.container
+                img(src='../static/school_pics/logo.png')
+                h1 Free School System 
+                p Read, Lead and Succeed 
+        section.mission
+            h2 Our Mission
+            div.sub-mission
+                div.mission-card#no1 
+                    div.transbox
+                        h1 Hello
+                div.mission-card#no2
+                    div.transbox
+                        h1 Hello
+                div.mission-card#no3
+                    div.transbox
+                        h1 Hello
+        section.sponsor 
+            h2 Sponsors 
+            div.container
+                img(src="../static/school_pics/Google.png")
+                img(src="../static/school_pics/tesla.png")
+                img(src="../static/school_pics/Skype.png")
+                img(src="../static/school_pics/Microsoft.png")
+              
+        

@@ -1,0 +1,37 @@
+//- index.pug
+doctype html
+html 
+    head 
+        title 
+            | School 
+        style
+            include ../static/style.css
+    body 
+        nav 
+            div.container
+                ul 
+                    li #[a(href="/") Home]
+                    li #[a(href="/") Gallery] 
+                    li #[a(href="/") About Us] 
+                    li #[a(href="/") Contact] 
+        section.main 
+            div.container
+                h1 Free School System 
+                p Read, Lead and Succeed 
+        section.mission
+            h2 Our Mission
+            div.sub-mission
+                div.mission-card#no1 
+                    div.transbox
+                        h1 Hello
+                div.mission-card#no2
+                    div.transbox
+                        h1 Hello
+                div.mission-card#no3
+                    div.transbox
+                        h1 Hello
+        footer 
+            div.foot
+                | FOOTER
+        script  
+            include ../static/script.js
