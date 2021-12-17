@@ -2,18 +2,42 @@
 doctype html
 html 
     head 
+        link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='../static/school_pics/favicon.ico')
+        link(rel='apple-touch-icon-precomposed', href='../static/school_pics/favicon-152.png')
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name="description", content="responsive template")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name='msapplication-TileImage', content='../static/school_pics/favicon-144.png')
         title 
             | School 
+      
         style
             include ../static/style.css
     body 
-        nav 
+         nav.navbar
             div.container
-                ul 
+                div.nav-resp
+                    div.burger
+                        div
+                        div
+                        div
+                ul.logo-ul
+                    li 
+                        img(src='../static/school_pics/logo.png', alt='FSS Logo')
+                    li FSS
+                ul.menu
                     li #[a(href="/") Home]
-                    li #[a(href="/") Gallery] 
-                    li #[a(href="/") About Us] 
-                    li #[a(href="/") Contact] 
+                    li #[a(href="/about") About Us] 
+                    li #[a(href="/contact") Contact]
+                div.links
+                    a(href="/", target="_blank")
+                        button.fa.fa-facebook 
+                    a(href="/", target="_blank")
+                        button.fa.fa-whatsapp 
+                    a(href="/", target="_blank")
+                        button.fa.fa-linkedin
+
         section.main 
             div.container
                 h1 Free School System 
@@ -33,5 +57,4 @@ html
         footer 
             div.foot
                 | FOOTER
-        script  
-            include ../static/script.js
+        

@@ -1,7 +1,6 @@
 extends base.pug
 
-block scripts
-    script(src='../static/scripts.js')
+
 block style  
         style
             include ../static/style.css
@@ -12,10 +11,11 @@ block content
             div.container
                 h1 Contact
             form(method="post" action="/contact" class="myform")
-                input(type="text" name="name" class="input" placeholder="Enter Your Name")
-                input(type="email" name="email" class="input" placeholder="Enter Your Email Address")
+                input(type="text" , required name="name" class="input" placeholder="Enter Your Name")
+                input(type="email" , required name="email" class="input" placeholder="Enter Your Email Address")
                 input(type="address" name="address" class="input" placeholder="Enter Your Address")
                 input(type="number" name="phone" class="input" placeholder="Enter Your Phone Number")
-                input(type="textarea" name="desc" class="input" placeholder="Enter Your Message")
+                input(type="textarea", required name="desc" class="input" placeholder="Enter Your Message")
                 button.btn 
                     | Submit   
+

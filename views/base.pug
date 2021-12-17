@@ -1,24 +1,43 @@
 doctype html 
 html    
     head 
-        title Free School System
-        block scripts 
+        link(rel='icon', href='../static/school_pics/favicon.ico')
+        link(rel='apple-touch-icon-precomposed', href='../static/school_pics/favicon-152.png')
+        meta(name='msapplication-TileImage', content='../static/school_pics/favicon-144.png')
+        script(src="https://kit.fontawesome.com/96e04035b7.js", crossorigin="anonymous")
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name="description", content="responsive template")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Free School Systems
+      
         block style 
     body 
-        nav 
+        nav.navbar
             div.container
-                
+                div.nav-resp
+                    div.burger
+                        div
+                        div
+                        div
                 ul.logo-ul
                     li 
-                        img(src='../static/school_pics/logo.png')
+                        img(src='../static/school_pics/logo.png', alt='FSS Logo')
                     li FSS
                 ul.menu
                     li #[a(href="/") Home]
-                    li #[a(href="/") Gallery] 
-                    li #[a(href="/") Services]
-                    li #[a(href="/") About Us] 
+                    li #[a(href="/about") About Us] 
                     li #[a(href="/contact") Contact]
-
+                div.links
+                    a(href="https://www.facebook.com/ashhad.hussain.311", target="_blank")
+                        button.fa.fa-facebook 
+                    a(href="https://wa.me/3082089597", target="_blank")
+                        button.fa.fa-whatsapp 
+                    a(href="https://www.linkedin.com/in/ashhad-hussain-848055227", target="_blank")
+                        button.fa.fa-linkedin
         block content 
         footer#footer 
             | Copyright &copy 2021 FreeSchoolSystem.com |  All rights reserved
+    
+        script(src='../static/script.js')
+        

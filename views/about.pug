@@ -1,0 +1,18 @@
+extends base.pug
+
+
+block style  
+        style
+            include ../static/style.css
+            include ../static/about.css
+            include ../static/contactstyle.css
+block content
+         
+        section.about
+            div.container_about
+                div.left_side
+                    h1 About Us 
+                    p Hello! My name is Ashhad Hussain, I am web developer, I  build and maintain websites. I often work for clients who are trying to get their product or service onto the web. The work is typically very project focused and involves collaborating with a team that helps to coordinate the client's needs into the end product.
+                    button.btn Read More..
+                div.right_side
+                    img(src="../static/school_pics/about.jpg", alt="programming pic")
